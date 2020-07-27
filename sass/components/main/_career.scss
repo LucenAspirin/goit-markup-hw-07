@@ -1,0 +1,35 @@
+.section {
+  margin-right: 215px;
+  width: 1170px;
+}
+.direction {
+  display: flex;
+}
+.business-box {
+  margin-bottom: 94px;
+}
+.direction .business + .business {
+  margin-left: 30px;
+}
+.business {
+  position: relative;
+  z-index: 1;
+}
+.feature-title {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+
+  margin: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  line-height: 1.14;
+  font-size: 14px;
+  color: $white-color;
+  background-color: rgba(47, 48, 58, 0.8);
+}

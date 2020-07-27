@@ -1,0 +1,60 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+a {
+  text-decoration: none;
+}
+img {
+  display: block;
+}
+body {
+  margin: 0;
+  background-color: #ffffff;
+  color: $main-text-color;
+  font-family: roboto, sans-serif;
+}
+/* обнуление спска точки */
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1170px;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+/* скрытый h1 */
+.onli {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* заголовки */
+.section-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+/* цвет текста заголовка */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $titel-text-color;
+}

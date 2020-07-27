@@ -1,0 +1,121 @@
+/* навигация */
+
+.main-nav {
+  height: 80px;
+  display: flex;
+  align-items: center;
+}
+.site-nav {
+  display: flex;
+  margin-left: 85px;
+
+  & .item + .item {
+    margin-left: 50px;
+  }
+}
+
+.site-nav .link {
+  position: relative;
+
+  padding-top: 32px;
+  padding-bottom: 31px;
+
+  color: var(--nav-link);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87px;
+  letter-spacing: 0.02em;
+}
+.link,
+.link-namber {
+  transition: color $duration $timing;
+}
+
+.site-nav .link:hover,
+.site-nav .link:focus {
+  color: $accent-color;
+}
+.auth-nav {
+  display: inline-flex;
+  margin-left: auto;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+
+  transition: color $duration $timing;
+
+  & .item + .item {
+    margin-left: 30px;
+  }
+  & a:hover,
+  & a:focus {
+    color: $accent-color;
+    --color5: #2196f3;
+  }
+}
+
+.site-nav .link.active {
+  color: $accent-color;
+}
+.current::after,
+.nav-hover::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  display: block;
+  width: 100%;
+  height: 4px;
+
+  border-radius: 2px;
+  background-color: $accent-color;
+
+  transition: transform $duration $timing, opacity $duration $timing;
+}
+.nav-hover::after {
+  opacity: 0;
+  transform: scaleX(0);
+}
+
+.nav-hover:hover::after {
+  opacity: 1;
+  transform: scaleX(1);
+}
+
+.auth-nav .link-namber {
+  display: inline-flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  color: $main-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.87;
+  letter-spacing: 0.02em;
+}
+
+.link-namber {
+  color: $main-text-color;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+}
+
+.mail-icon {
+  width: 16px;
+  height: 11.2px;
+  margin-right: 10px;
+  fill: #757575;
+  fill: currentColor;
+}
+
+.tel-icon {
+  width: 10px;
+  height: 14.94px;
+  margin-right: 10px;
+  fill: #757575;
+  fill: currentColor;
+}

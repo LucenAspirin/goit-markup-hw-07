@@ -1,0 +1,47 @@
+/* клиенты */
+/* цвет текста заголовка */
+.section-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  color: $titel-text-color;
+}
+.customers {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+
+  & .customer-list + .customer-list {
+    margin-left: 30px;
+  }
+}
+
+.company {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+
+  fill: $icons-color;
+  transition: border-color $duration $timing, fill $duration $timing;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    fill: $accent-color;
+  }
+}
+
+.slogan-img {
+  display: block;
+  width: 270px;
+  height: 120px;
+
+  padding: 25px 100px;
+  border-radius: 4px;
+  text-align: center;
+  background-color: #f5f4fa;
+}

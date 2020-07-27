@@ -1,0 +1,20 @@
+.logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 0.8;
+  letter-spacing: 0.03em;
+
+  &:hover {
+    color: $accent-color;
+  }
+}
+.logo-web {
+  color: $logo-web-text-color;
+}
+.logo-studio {
+  color: $logo-studio-text-color;
+}
+.foot-logo-studio {
+  color: $white-color;
+}

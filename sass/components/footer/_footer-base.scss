@@ -1,0 +1,26 @@
+.footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: 253px;
+  background-color: #2f303a;
+}
+.networks-list-footer {
+  margin-right: 10px;
+}
+.networks-list-footer:last-child {
+  margin-right: 0;
+}
+.footer-cont {
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+.footer-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.footer-logo {
+  display: flex;
+  align-items: baseline;
+}

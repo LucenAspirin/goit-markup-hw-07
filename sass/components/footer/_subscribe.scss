@@ -1,0 +1,47 @@
+.subscribe {
+  display: inline-block;
+  margin-right: 10px;
+
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+
+  transition: fill var(--duration) var(--timing);
+}
+
+.subscribe-svg:hover,
+.subscribe-svg:focus {
+  fill: var(--accent-color);
+}
+.push {
+  display: block;
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.email {
+  margin-right: 12px;
+  padding-left: 16px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: var(--footer-background-color);
+  color: var(--icons-color);
+  font-size: 16px;
+  line-height: 1.25;
+}
+.go:hover,
+.go:focus {
+  color: var(--accent-color);
+}

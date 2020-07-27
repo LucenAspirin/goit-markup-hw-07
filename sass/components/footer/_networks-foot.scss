@@ -1,0 +1,18 @@
+.networks-list-footer {
+  border-radius: 50px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-social {
+  padding: 0;
+}
+.networks-footer {
+  fill: $white-color;
+}
+
+.networks-list-footer:hover,
+.networks-list-footer:focus {
+  background-color: $accent-color;
+}
+.icon-social-fut {
+  fill: #fff;
+}
